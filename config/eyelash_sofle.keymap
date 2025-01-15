@@ -51,11 +51,11 @@
 
         Base {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3            &kp N4  &kp N5                      &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E             &kp R   &kp T                       &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSLH
-&mo 2       &kp A      &kp S         &kp D             &kp F   &kp G                       &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C             &kp V   &kp B                       &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1   &kt LS(LA(LG(NUMBER_4)))    &kp ENTER        &kp ENTER  &kp SPACE  &mo 3      &none    &none
+&kp ESC     &kp N1     &kp N2        &kp N3            &kp N4  &kp N5                      &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9         &kp N0     &kp BACKSPACE
+&kp TAB     &kp Q      &kp W         &kp E             &kp R   &kp T                       &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O          &kp P      &kp BSLH
+&mo 2       &kp A      &kp S         &kp D             &kp F   &kp G                       &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L          &kp SEMI   &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C             &kp V   &kp B                       &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT        &kp FSLH   &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1   &kt LS(LA(LG(NUMBER_4)))    &kp ENTER        &kp ENTER  &kp SPACE  &mo 3      &kp RIGHT_GUI  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -65,9 +65,9 @@
         Mod {
             bindings = <
 &kp GRAVE   &kp F1             &kp F2           &kp F3       &kp F4         &kp F5               &mmv MOVE_UP     &kp F6     &kp F7    &kp F8    &kp F9     &kp F10           &trans
-&trans      &kt LA(BACKSPACE)  &kt LS(LC(TAB))  &kt LG(T)    &kt LC(TAB)    &mkp MB4             &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp MINUS         &kp EQUAL
-&trans      &kp CAPS           &kt LA(LEFT)     &kt LG(TAB)  &kt LA(RIGHT)  &kt LA(BACKSPACE)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &none              &kt LG(LEFT)     &kt LG(W)    &kt LG(RIGHT)  &rgb_ug RGB_SPI      &mmv MOVE_RIGHT  &none      &none     &none     &none      &none             &trans
+&trans      &kp LA(BACKSPACE)  &kp LS(LC(TAB))  &kp LG(T)    &kp LC(TAB)    &none                &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp MINUS         &kp EQUAL
+&trans      &kp CAPS           &kp LA(LEFT)     &kp LG(TAB)  &kp LA(RIGHT)  &kp LA(BACKSPACE)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &none              &kt LG(LEFT)     &kt LG(W)    &kt LG(RIGHT)  &none                &mmv MOVE_RIGHT  &none      &none     &none     &none      &none             &trans
 &kp C_MUTE  &trans             &trans           &trans       &trans         &trans               &mkp LCLK        &trans     &trans    &trans    &trans     &trans
             >;
 
@@ -91,9 +91,9 @@
         Fn {
             bindings = <
 &trans  &trans  &trans                  &trans                &trans                    &trans    &trans  &trans           &trans                  &trans                &trans             &trans           &trans
-&trans  &trans  &kt LA(LG(SEMICOLON))   &kt LA(LG(UP_ARROW))  &kt LA(LG(SINGLE_QUOTE))  &trans    &trans  &msc SCRL_DOWN   &kt LA(LG(SEMI))        &kt LA(LG(UP_ARROW))  &kt LA(LG(SEMI))   &kp C_VOLUME_UP  &trans
-&trans  &trans  &kt LA(LG(LEFT_ARROW))  &kt LA(LG(DOWN))      &kt LA(LG(RIGHT))         &trans    &trans  &msc SCRL_UP     &kt LA(LG(LEFT_ARROW))  &kt LA(LG(DOWN))      &kt LA(LG(RIGHT))  &kp C_VOL_DN     &trans
-&trans  &trans  &kt LA(LG(PERIOD))      &trans                &kt LA(LG(SLASH))         &trans    &trans  &trans           &kt LA(LG(PERIOD))      &trans                &kt LA(LG(SLASH))  &kp K_MUTE       &trans
+&trans  &trans  &kp LA(LG(SEMICOLON))   &kp LA(LG(UP_ARROW))  &kp LA(LG(SINGLE_QUOTE))  &trans    &trans  &msc SCRL_DOWN   &kp LA(LG(SEMI))        &kp LA(LG(UP_ARROW))  &kp LA(LG(SEMI))   &kp C_VOLUME_UP  &trans
+&trans  &trans  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT))         &trans    &trans  &msc SCRL_UP     &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT))  &kp C_VOL_DN     &trans
+&trans  &trans  &kp LA(LG(PERIOD))      &trans                &kp LA(LG(SLASH))         &trans    &trans  &trans           &kp LA(LG(PERIOD))      &trans                &kp LA(LG(SLASH))  &kp K_MUTE       &trans
 &trans  &trans  &trans                  &trans                &trans                    &trans    &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG         &trans                &trans             &trans
             >;
 
