@@ -1,12 +1,15 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 3000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 50    // 10
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -66,12 +69,12 @@
 &kp GRAVE   &kp F1             &kp F2           &kp F3       &kp F4         &kp F5               &mmv MOVE_UP     &kp F6     &kp F7    &kp F8    &kp F9     &kp F10           &trans
 &trans      &kp LA(BACKSPACE)  &kp LS(LC(TAB))  &kp LG(T)    &kp LC(TAB)    &none                &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp MINUS         &kp EQUAL
 &trans      &kp CAPS           &kp LA(LEFT)     &kp LG(TAB)  &kp LA(RIGHT)  &kp LA(BACKSPACE)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &none              &kp LG(LEFT)     &kp LG(W)    &kp LG(RIGHT)  &none                &mmv MOVE_RIGHT  &none      &none     &none     &none      &none             &trans
+&trans      &none              &kt LG(LEFT)     &kt LG(W)    &kt LG(RIGHT)  &none                &mmv MOVE_RIGHT  &none      &none     &none     &none      &none             &trans
 &kp C_MUTE  &trans             &trans           &trans       &trans         &trans               &mkp LCLK        &trans     &trans    &trans    &trans     &trans
             >;
 
             display-name = "Mod";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         Mouse {
@@ -97,6 +100,7 @@
             >;
 
             label = "Fn";
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
     };
 };
