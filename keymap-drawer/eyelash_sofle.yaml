@@ -79,24 +79,24 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - {t: 'Alt+$$mdi:backspace$$', h: toggle}
+  - {t: 'Sft+Ctl+$$mdi:keyboard-tab$$', h: toggle}
+  - {t: Gui+T, h: toggle}
+  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: toggle}
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
-  - END
-  - $$mdi:arrow-up-bold$$
   - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - $$mdi:apple-keyboard-caps$$
+  - {t: 'Alt+$$mdi:arrow-left-bold$$', h: toggle}
+  - {t: 'Gui+$$mdi:keyboard-tab$$', h: toggle}
+  - {t: 'Alt+$$mdi:arrow-right-bold$$', h: toggle}
+  - {t: 'Alt+$$mdi:backspace$$', h: toggle}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - $$mdi:arrow-left-bold$$
@@ -105,17 +105,17 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
-  - RGB EFF
-  - RGB EFR
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Gui+$$mdi:arrow-left-bold$$', h: toggle}
+  - {t: Gui+W, h: toggle}
+  - {t: 'Gui+$$mdi:arrow-right-bold$$', h: toggle}
   - RGB SPI
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - RGB BRI
-  - RGB BRD
-  - Ins
-  - F11
-  - F12
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
