@@ -106,9 +106,9 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+$$mdi:arrow-left-bold$$
-  - Gui+W
-  - Gui+$$mdi:arrow-right-bold$$
+  - {t: 'Gui+$$mdi:arrow-left-bold$$', h: toggle}
+  - {t: Gui+W, h: toggle}
+  - {t: 'Gui+$$mdi:arrow-right-bold$$', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
